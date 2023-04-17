@@ -1,0 +1,169 @@
+@font-face {
+    font-family: MonaSans;
+    src: url(../font/Mona-Sans.ttf);
+}
+
+:root {
+    --white: #fff;
+    --black: #01040aff;
+    --rich-black: #0b0f16ff;
+    --grey: #161C22;
+    --forest-green: #238636ff;
+    --chefchaouen-blue: #2d8bf6ff;
+    --salmon: #f78166ff;
+    
+    --h-margin: 5px;
+    --p-margin: 4vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GENERAL STYLES */
+html {
+    font-family: MonaSans, sans-serif;
+    font-size: 62.5%;
+    
+}
+
+main {
+    color: var(--white);
+    background-color: var(--rich-black);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: var(--h-margin);
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: var(--h-margin);
+}
+
+article h2 {
+    color: var(--chefchaouen-blue);
+}
+
+h3 {
+    font-size: 2.6rem;
+    margin-bottom: var(--p-margin);
+}
+
+p {
+    font-size: 1.5rem;
+    margin-bottom: var(--p-margin);
+}
+
+article p {
+    color: #ffffff8e;
+}
+
+a {
+    color: var(--white);
+}
+
+a:not(.exception) {
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 0 5px;
+}
+
+.follow{
+    font-size: 1.5rem;
+}
+
+section p .null {
+    padding: 0;
+}
+
+/* IMG's / SVGs*/
+img {
+    max-width: 100%;
+}
+
+.git-logo {
+    width: 3vw;
+    height: auto;
+}
+
+svg {
+    padding: 0 2.5px;
+}
+
+aside img {
+    border-radius: 50%;
+}
+
+/* HEADER */
+header {
+    background-color: var(--grey);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+nav, .nav-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+input {
+    background-color: var(--rich-black);
+    color: #ffffff8e;
+    border: .5px solid #ffffff8e;
+    border-radius: 2.5px;
+    padding: 2.5px 20px 2.5px 7.5px;
+}
+
+/* UNDERLINE NAV */
+.underline-nav {
+    background-color: var(--rich-black);
+    border-bottom: 1px solid #ffffff11;
+    padding: 15px 0;
+    text-align: right;
+    position: sticky;
+    top: 0;
+}
+
+/* MAIN */
+main {
+    min-height: 100vh;
+    padding: 5vh 7.5vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+main aside {
+    grid-column: 1 / 2;
+}
+
+main section {
+    grid-column: 2 / 4;
+}
+
+/* ASIDE */
+aside .follow {
+    display: inline-block;
+    width: 75%;
+    text-align: center;
+    background-color: var(--grey);
+    color: #ffffff8e;
+    border: .5px solid #ffffff8e;
+    border-radius: 5px;
+    padding: 7.5px 0;
+}
+
+/* ARTICLE */
+article {
+    border-bottom: 1px solid #ffffff2d;
+    margin-bottom: var(--p-margin);
+}
